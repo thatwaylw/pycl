@@ -3,9 +3,9 @@
 
 import os
 
-data_path = "data_dl"
-model_path = data_path + "/model/"
-train_data_path = data_path + "/dluo_train_5734.csv"
-validate_data_path = data_path + "/dluo_valid_5734.csv"
-test_data_path = data_path + "/dluo_all_5734.csv"
-test_data_predict_output_path = data_path + "/dluo_all_5734_predict.csv"
+data_path = "data"	# data root path
+model_path = data_path + "/model/"		# for output
+train_data_path = data_path + "/train.csv"
+validate_data_path = data_path + "/valid.csv"
+test_data_path = data_path + "/test.csv"
+test_data_predict_output_path = data_path + "/predict.csv"		# for output

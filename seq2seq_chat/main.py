@@ -408,7 +408,7 @@ with tf.Session(graph=loaded_graph) as sess:
     print('  Word 编号:       {}'.format([i for i in answer_logits if i != pad]))
     print('  Response Words: {}'.format(" ".join([target_int_to_letter[i] for i in answer_logits if i != pad])))
 
-    with io.open('./data/test_in.txt', 'r', encoding='utf-8') as f:
+    with io.open('./data/test_in_c.txt', 'r', encoding='utf-8') as f:
         testin_data = f.read()
     for input_word in testin_data.split('\n'):
         text = source_to_seq(input_word)

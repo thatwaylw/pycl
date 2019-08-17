@@ -24,4 +24,4 @@ def seg_words(contents):
 
 
 def get_f1_score(y_true, y_pred):
-    return f1_score(y_true, y_pred, labels=[1], average='macro')
+    return f1_score(y_true, y_pred, labels=[1,-1,-2], average='macro')
